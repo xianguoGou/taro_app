@@ -1,0 +1,15 @@
+{
+  "smartProgramRoot": "./",
+  "projectname": "taro_app",
+  "appid": "24583814",
+  "setting": {
+    "urlCheck": false
+  },
+  "compilation-args": {
+    "common": {
+      "ignoreTransJs": false,
+      "ignorePrefixCss": false,
+      "ignoreUglify": false
+    }
+  }
+}
