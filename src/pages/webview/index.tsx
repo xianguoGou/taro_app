@@ -7,8 +7,7 @@
  * @FilePath: /taro_app/src/pages/index/index.tsx
  */
 import { Component } from 'react'
-import { View, Text, Button } from '@tarojs/components'
-import Taro from '@tarojs/taro'
+import { View, Text, WebView } from '@tarojs/components'
 
 export default class Index extends Component {
 
@@ -22,18 +21,9 @@ export default class Index extends Component {
 
   componentDidHide () { }
 
-  goWeb = () => {
-    Taro.navigateTo({
-      url: '/pages/webview/index'
-    })
-  }
-
   render () {
     return (
-      <View className='index'>
-        <Text>表单</Text>
-        <Button onClick={this.goWeb}>打开webView网页</Button>
-      </View>
+      <WebView src='http://localhost:9000/terms' />
     )
   }
 }

@@ -3,6 +3,7 @@ export default {
     'pages/home/index',
     'pages/forms/index',
     'pages/me/index',
+    'pages/webview/index',
   ],
   window: {
     backgroundTextStyle: 'light',
